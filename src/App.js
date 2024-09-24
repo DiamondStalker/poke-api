@@ -5,10 +5,13 @@ import Home from './pages/Home.jsx';
 import Detail from './pages/Detail.jsx'
 
 function App() {
+  
+  let basename = window.location.pathname.includes('/poke-api') ? '/poke-api' : ''
+  
   return (
     <div className="App">
       <header className="App-header">
-        <BrowserRouter basename="/poke-api">
+        <BrowserRouter basename={basename}>
           <Routes>
             <Route path='/' element={<Home/>}></Route>
             <Route path='/detail/:id' element={<Detail/>}></Route>

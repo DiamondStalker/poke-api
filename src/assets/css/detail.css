@@ -183,17 +183,11 @@ body {
 
 .pokemonImg {
     position: absolute;
-    /* Posicionamiento absoluto */
     top: -25%;
-    /* Ajusta esto según el tamaño de la imagen */
     left: 50%;
-    /* Centra horizontalmente */
     transform: translate(-50%, 0);
-    /* Centrado exacto */
     height: 290px;
-    /* Mantiene la proporción de aspecto */
     z-index: 1;
-    /* Asegura que esté encima */
 }
 
 .types {
@@ -378,4 +372,45 @@ body {
     /* Espaciado arriba y abajo, ajusta según sea necesario */
     font-size: 24px;
     /* Tamaño de fuente, ajusta según sea necesario */
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   MOVILES                                  */
+/* -------------------------------------------------------------------------- */
+@media only screen and (max-width: 480px) {
+    .base-stats {
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .pokemonImg {
+        position: absolute;
+        top: -25%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        height: 30%;
+        z-index: 2;
+    }
+
+    .logo {
+        position: relative;
+        width: 300px;
+        height: auto;
+        margin-right: 35%;
+        z-index: 1;
+    }
+
+    .idPokemon {
+        position: absolute;
+        left: 88%;
+        top: 68%;
+        z-index: 2;
+    }
+
+    .info-container .pokemonImg {
+        z-index: 2;
+    }
 }
