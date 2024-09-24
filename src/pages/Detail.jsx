@@ -34,9 +34,12 @@ const Detail = () => {
 
             <div className="info-container">
                 <img className={'pokemonImg'} src={info.image} alt={info.name} />
-                {info.types.map((elem, i) => (
-                    <Type poke={elem} key={i} />
-                ))}
+                <div className='types'>
+
+                    {info.types.map((elem, i) => (
+                        <Type poke={elem} key={i} />
+                    ))}
+                </div>
                 <h2 className={'about'} style={{ color: colors[info.types.length > 0 ? info.types[0].type.name : 'defaultColor'] }}>
                     ABOUT
                 </h2>

@@ -1,117 +1,323 @@
-/* Colores para los tipos de Pokémon */
 .grass {
-    background-color: rgb(116, 203, 72);
+    background-color: #32CD32;
+    /* Verde claro */
     color: white;
 }
 
 .poison {
-    background-color: rgb(164, 62, 158);
+    background-color: #A43E9E;
+    /* Púrpura */
     color: white;
 }
 
 .fire {
-    background-color: rgb(245, 125, 49);
+    background-color: #FF4500;
+    /* Naranja */
     color: white;
 }
 
 .water {
-    background-color: rgb(100, 147, 235);
+    background-color: #1E90FF;
+    /* Azul */
     color: white;
 }
 
 .bug {
-    background-color: rgb(167, 183, 35);
+    background-color: #A7B735;
+    /* Verde amarillento */
     color: white;
 }
 
 .electric {
-    background-color: rgb(249, 207, 48);
+    background-color: #FFD700;
+    /* Amarillo */
     color: white;
 }
 
-.flyingD {
-    background-color: rgb(168, 145, 236);
+.ice {
+    background-color: #ADD8E6;
+    /* Azul claro */
     color: white;
 }
 
-body,
-html {
-    margin: 0;
-    padding: 0;
-    min-width: 100vw;
-    min-height: 100vh;
+.rock {
+    background-color: #A52A2A;
+    /* Marrón */
+    color: white;
 }
 
-.detail-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
+.flying {
+    background-color: #A889EC;
+    /* Azul pálido */
+    color: white;
+}
+
+.normal {
+    background-color: #A8A89C;
+    /* Gris */
+    color: white;
+}
+
+.ground {
+    background-color: #D2B48C;
+    /* Marrón claro */
+    color: white;
+}
+
+.fairy {
+    background-color: #FFC0CB;
+    /* Rosa */
+    color: white;
+}
+
+.fighting {
+    background-color: #C52C48;
+    /* Rojo oscuro */
+    color: white;
+}
+
+.psychic {
+    background-color: #FF69B4;
+    /* Rosa fuerte */
+    color: white;
+}
+
+.ghost {
+    background-color: #9B59B6;
+    /* Púrpura oscuro */
+    color: white;
+}
+
+.dark {
+    background-color: #4B0082;
+    /* Indigo */
+    color: white;
+}
+
+.steel {
+    background-color: #B0C4DE;
+    /* Azul acero */
+    color: white;
+}
+
+.dragon {
+    background-color: #8A2BE2;
+    /* Azul violeta */
+    color: white;
+}
+
+
+.logo-container {
+    position: relative;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-}
-
-/* Nuevo contenedor para el encabezado */
-.header {
-    display: flex;
-    justify-content: space-between;
-    /* Espacio entre nombre, ID y logo */
-    width: 80%;
-    /* Mantiene el encabezado en el 80% del ancho */
-    align-items: center;
-    /* Alinear verticalmente */
-    margin-bottom: 10px;
-    /* Espacio entre el encabezado y la caja de información */
-}
-
-.name {
-    margin: 0;
-    /* Elimina márgenes para mejor alineación */
 }
 
 .idPokemon {
-    margin: 0;
-    /* Elimina márgenes para mejor alineación */
+    font-size: 1.5em;
+    color: #666;
+    position: absolute;
+    bottom: 35px;
+    left: 90%;
+    transform: translateX(-50%);
+    z-index: 1
 }
 
 .logo {
-    width: 200px;
+    width: 300px;
     height: auto;
     opacity: 0.2;
+    margin-right: 25%;
+    z-index: 1
+}
+
+
+
+.detail-container {
+    /* Propiedades comunes para el contenedor */
+    min-height: 100vh;
+    /* Asegura que el contenedor cubra toda la altura de la ventana */
+    display: flex;
+    /* Otras propiedades de flex si son necesarias */
+    flex-direction: column;
+    /* Si necesitas un diseño vertical */
+}
+
+body {
+    margin: 0;
+    /* Eliminar márgenes predeterminados */
+    padding: 0;
+    /* Eliminar padding predeterminado, si es necesario */
+    height: 100vh;
+    /* Asegura que el body ocupe toda la altura de la ventana */
+}
+
+.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    z-index: 1000;
 }
 
 .info-container {
+    position: relative;
     background-color: white;
-    border-radius: 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 20px;
-    width: 80%;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 80px auto;
+    max-width: 80%;
+    width: auto;
+    text-align: center;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: -100px;
 }
 
-/* .pokemonImg {
+.pokemonImg {
     position: absolute;
+    /* Posicionamiento absoluto */
+    top: -25%;
+    /* Ajusta esto según el tamaño de la imagen */
     left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 80%;
-    height: auto;
+    /* Centra horizontalmente */
+    transform: translate(-50%, 0);
+    /* Centrado exacto */
+    height: 290px;
+    /* Mantiene la proporción de aspecto */
     z-index: 1;
-} */
+    /* Asegura que esté encima */
+}
+
+.types {
+    position: relative;
+    /* Mantiene la posición relativa */
+    z-index: 2;
+    /* Asegura que los tipos estén encima de la imagen */
+    margin-top: 80px;
+    /* Ajusta el margen superior según sea necesario para dar espacio a la imagen */
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    STATS                                   */
+/* -------------------------------------------------------------------------- */
+
+
+.base-stats {
+    width: 500px;
+    padding: 20px;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.stat-name,
+.stat-values {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.stat-name {
+    font-weight: bold;
+    text-align: right;
+    padding-right: 10px;
+    flex-basis: 20%;
+}
+
+.separator {
+    width: 1px;
+    background-color: #ddd;
+    margin: 0 20px;
+    height: 100%;
+}
+
+.stat-values {
+    flex-grow: 1;
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+.stat-info {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.stat-value {
+    min-width: 40px;
+    text-align: right;
+    margin-right: 15px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.progress-container {
+    flex-grow: 1;
+    background-color: #e0e0e0;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar {
+    height: 100%;
+    transition: width 0.5s ease-in-out;
+    position: relative;
+}
+
+.progress-bar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom,
+            rgba(255, 255, 255, 0.1) 0%,
+            rgba(255, 255, 255, 0.3) 50%,
+            rgba(255, 255, 255, 0) 51%,
+            rgba(255, 255, 255, 0) 100%);
+}
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                INFO POKEMON                                */
+/* -------------------------------------------------------------------------- */
 
 .pokemon-info {
-    display: flex; 
-    align-items: center; /* Alinear verticalmente */
-    justify-content: center; /* Alinear horizontalmente */
+    display: flex;
+    align-items: center;
+    /* Alinear verticalmente */
+    justify-content: center;
+    /* Alinear horizontalmente */
     padding: 20px;
     border-radius: 10px;
-    text-align: center; /* Centrar el texto en el contenedor */
-    margin: 0 auto; /* Centrar el contenedor en el espacio disponible */
-}
-
-.info-item {
-    margin: 0 10px;
+    text-align: center;
+    /* Centrar el texto en el contenedor */
+    margin: 0 auto;
+    /* Centrar el contenedor en el espacio disponible */
 }
 
 .separator {
@@ -136,6 +342,12 @@ html {
     color: black;
 }
 
+
+
+/* -------------------------------------------------------------------------- */
+/*                                    TYPES                                   */
+/* -------------------------------------------------------------------------- */
+
 .type {
     display: inline-flex;
     justify-content: center;
@@ -150,96 +362,20 @@ html {
     border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
+.types {
+    margin-top: 10%;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                    ABOUT                                   */
+/* -------------------------------------------------------------------------- */
+
 .about {
-    text-align: center; /* Centrar el texto horizontalmente */
-    margin: 20px 0; /* Espaciado arriba y abajo, ajusta según sea necesario */
-    font-size: 24px; /* Tamaño de fuente, ajusta según sea necesario */
-}
-
-.info-container {
-    display: flex;
-    flex-direction: column; /* Alinear elementos en una columna */
-    align-items: center; /* Centrar elementos horizontalmente */
-    padding: 20px;
-}
-
-/* ///////////////////// */
-
-
-.base-stats {
-    width: 500px;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: #f5f5f5;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-.stats-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-}
-.stat-name, .stat-values {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.stat-name {
-    font-weight: bold;
-    text-align: right;
-    padding-right: 10px;
-    flex-basis: 20%;
-}
-.separator {
-    width: 1px;
-    background-color: #ddd;
-    margin: 0 20px;
-}
-.stat-values {
-    flex-grow: 1;
-}
-.stat {
-    display: flex;
-    align-items: center;
-    height: 40px;
-    margin-bottom: 15px;
-}
-.stat-info {
-    display: flex;
-    align-items: center;
-    width: 100%;
-}
-.stat-value {
-    min-width: 40px;
-    text-align: right;
-    margin-right: 15px;
-    font-size: 1.1em;
-    font-weight: bold;
-}
-.progress-container {
-    flex-grow: 1;
-    background-color: #e0e0e0;
-    height: 20px;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
-}
-.progress-bar {
-    height: 100%;
-    transition: width 0.5s ease-in-out;
-    position: relative;
-}
-.progress-bar::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(
-        to bottom,
-        rgba(255,255,255,0.1) 0%,
-        rgba(255,255,255,0.3) 50%,
-        rgba(255,255,255,0) 51%,
-        rgba(255,255,255,0) 100%
-    );
+    text-align: center;
+    /* Centrar el texto horizontalmente */
+    margin: 20px 0;
+    /* Espaciado arriba y abajo, ajusta según sea necesario */
+    font-size: 24px;
+    /* Tamaño de fuente, ajusta según sea necesario */
 }

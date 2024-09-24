@@ -5,5 +5,17 @@
     "electric": "#FFD700",
     "ice": "#ADD8E6",
     "rock": "#A52A2A",
-    "default":"#000000FF"
+    "default": "#000000FF",
+    "bug": "#A8B820",
+    "dragon": "#7038F8",
+    "fairy": "#EE99AC",
+    "fighting": "#C03028",
+    "flying": "#A890F0",
+    "ghost": "#705898",
+    "ground": "#E0C068",
+    "normal": "#A8A878",
+    "poison": "#A040A0",
+    "psychic": "#F85888",
+    "steel": "#B8B8D0",
+    "dark": "#705848"
 }
