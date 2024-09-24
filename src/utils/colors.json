@@ -1,0 +1,9 @@
+{
+    "fire": "#FF4500",
+    "water": "#1E90FF",
+    "grass": "#32CD32",
+    "electric": "#FFD700",
+    "ice": "#ADD8E6",
+    "rock": "#A52A2A",
+    "default":"#000000FF"
+}

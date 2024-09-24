@@ -1,0 +1,108 @@
+/* DEFAULT  */
+
+body:not(.grass):not(.poison):not(.fire):not(.water):not(.bug):not(.electric):not(.flyingD) {
+    background-color: #dc0a2d;
+    min-width: 480px;
+    min-height: 100vh;
+}
+
+/* LOGO */
+
+.Logo {
+    display: flex;
+    align-items: center;
+}
+
+.Logo img {
+    margin-right: 20px;
+    width: 5%;
+}
+
+.Logo h1 {
+    margin: 0;
+    font-size: 7rem;
+    color: white;
+}
+
+/* Styles for smaller screens*/
+@media (max-width: 768px) {
+    .Logo img {
+        width: 10%;
+    }
+
+    .Logo h1 {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .Logo img {
+        width: 15%;
+    }
+
+    .Logo h1 {
+        font-size: 3rem;
+    }
+}
+
+/* SEARCH */
+
+.search-input {
+    position: relative;
+    /* Permite el posicionamiento absoluto del ícono */
+    display: flex;
+    margin: 20px;
+    /* Espacio alrededor del campo de búsqueda */
+}
+
+.search-icon {
+    position: absolute;
+    /* Posiciona el ícono sobre el input */
+    left: 10px;
+    /* Ajusta según necesites */
+    top: 50%;
+    /* Centra verticalmente */
+    transform: translateY(-50%);
+    /* Ajusta para que esté centrado */
+    width: 20px;
+    /* Ajusta el tamaño del ícono */
+    height: 20px;
+    /* Ajusta el tamaño del ícono */
+    pointer-events: none;
+    /* Evita que el ícono interfiera con la interacción del input */
+}
+
+.search-input input {
+    width: 100%;
+    /* Hace que el input ocupe el 100% del ancho disponible */
+    max-width: 400px;
+    /* Ancho máximo para el campo de búsqueda */
+    padding: 10px 40px;
+    /* Espacio interno, deja espacio para el ícono */
+    border: none;
+    /* Sin borde predeterminado */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    font-size: 1.2rem;
+    /* Tamaño de fuente del input */
+    color: #333;
+    /* Color del texto */
+    background-color: white;
+    /* Color de fondo del input */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* Sombra para un efecto de profundidad */
+    transition: box-shadow 0.3s;
+    /* Transición suave para la sombra */
+}
+
+.search-input input::placeholder {
+    color: #aaa;
+    /* Color del texto del placeholder */
+}
+
+.search-input input:focus {
+    outline: none;
+    /* Sin contorno al hacer foco */
+    box-shadow: 0 0 10px rgba(0, 162, 255, 0.5);
+    /* Sombra al hacer foco */
+}

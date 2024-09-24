@@ -1,0 +1,64 @@
+.card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    width: 250px;
+    min-height: 200px;
+    margin: 20px 5.6px;
+    position: relative;
+    height: 245px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.card img {
+    max-width: 70%;
+    z-index: 2;
+    /* Imagen sobre el namePokemon */
+    position: relative;
+    /* Para permitir la superposición */
+    margin-top: 10%;
+}
+
+.namePokemon {
+    background-color: rgba(239, 239, 239);
+    padding: 20%;
+    border-radius: 20px;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+    line-height: 60px;
+    /* Altura de línea ajustada para centrar el texto verticalmente */
+    display: flex;
+    justify-content: center;
+}
+
+
+.id {
+    position: absolute;
+    top: -14px;
+    right: 5px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 3;
+    /* Asegura que el ID esté en la capa más alta */
+}
