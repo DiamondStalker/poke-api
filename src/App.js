@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <BrowserRouter>
+        <BrowserRouter basename="/poke-api">
           <Routes>
             <Route path='/' element={<Home/>}></Route>
             <Route path='/detail/:id' element={<Detail/>}></Route>

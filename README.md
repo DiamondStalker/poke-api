@@ -2,6 +2,39 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Page
+
+Visit [https://diamondstalker.github.io/poke-api/](Deploy with gh-pages)
+OR 
+Visit [https://poke-api-zp86.onrender.com/](Deploy with Render)
+
+## Description
+Poke API is a web application that allows users to search and explore information about Pokémon. It uses the [Pokémon API](https://pokeapi.co/) to obtain real-time data and presents the information in an attractive and easy-to-navigate way.
+
+## Features
+- **Pokémon Search:** Allows you to search for Pokémon by name or ID.
+- **Viewing Details:** Muestra información detallada sobre cada Pokémon, incluyendo sus tipos, habilidades y estadísticas.
+- **Interfaz de Usuario Atractiva:** Uses React for a fluid and dynamic user experience.
+- **Deployment and GitHub Pages:** La aplicación está alojada en GitHub Pages y se puede acceder públicamente.
+
+## Tecnologías Utilizadas
+- **Frontend:** React, React Router
+- **API:** PokeAPI
+- **Estilos:** CSS
+- **Despliegue:** GitHub Pages AND Render
+
+
+## Upcoming Features
+
+- [ ] **User Authentication:** Implement a login system so that users can save their favorite Pokémon.
+- [ ] **Favoritos:** Allow users to mark Pokémon as favorites and view a list of them.
+- [ ] **Advanced Filtering:** Add options to filter Pokémon by type, ability, and other attributes.
+- [ ] **UI/UX improvements:** Optimize the user interface for a more intuitive experience.
+- [ ] **Multilanguage Support:** Implement support for multiple languages.
+
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:
