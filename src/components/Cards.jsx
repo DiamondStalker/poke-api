@@ -39,6 +39,7 @@ const Cards = (params) => {
             } catch (e) {
                 setPokemon([]);
                 setError('El Pokemon no existe');
+                localStorage.removeItem('search');
             } finally {
                 setLoading(false);
             }
