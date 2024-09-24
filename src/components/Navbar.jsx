@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import logo from '../assets/img/Pokeball.png'
 import search from '../assets/img/icons8-search-50.png'
 import '../assets/css/home.css'
-import { getPokemonSearch } from '../services/api'
 
 const Title = ({ setPokemons, setsearchpoke }) => {
 

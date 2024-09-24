@@ -7,13 +7,13 @@ const Pokemoninfo = ({ poke, id }) => {
     return (
         <div className="pokemon-info">
             <div className="info-item">
-                <img src={weightIcon}></img>
+                <img src={weightIcon} alt={'WEIGTH'}></img>
                 <strong> {poke.weight} kg</strong>
                 <p>WEIGTH</p>
             </div>
             <div className="separator"></div>
             <div className="info-item">
-                <img src={scale}></img>
+                <img src={scale} alt={'HEIGHT'}></img>
                 <strong> {poke.height} m </strong>
                 <p>HEIGHT</p>
             </div>

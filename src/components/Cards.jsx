@@ -25,7 +25,7 @@ const Cards = (params) => {
                     id: resp.id,
                     name: resp.name,
                     image: resp.sprites.other['official-artwork'].front_default,
-                    weight: resp.weight / 10 % 1 == 0 ? (resp.weight / 10).toFixed(1) : resp.weight / 10,
+                    weight: resp.weight / 10 % 1 === 0 ? (resp.weight / 10).toFixed(1) : resp.weight / 10,
                     height: resp.height / 10,
                     abilities: resp.abilities,
                     types: resp.types,
