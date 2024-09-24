@@ -9,17 +9,18 @@ const getListPokemon = async () => {
         return response.data.results; // Devuelve los datos de la respuesta
     } catch (error) {
         console.error('Error fetching Pokémon list:', error);
-        throw error; // Lanza el error para manejarlo en el componente
+        throw error;
     }
 };
 
 const getPokemon = async (url) => {
     try {
         const response = await axios.get(url);
-        return response.data; // Devuelve los datos de la respuesta
+        return response.data;
     } catch (error) {
-        console.error('Error fetching Pokémon list:', error);
-        throw error; // Lanza el error para manejarlo en el componente
+        // window.location.reload();
+        localStorage.removeItem("ListPokemons");
+        console.error('Error fetching Get Pokémon:', error);
     }
 };
 const getPokemonSearch = async (text) => {
