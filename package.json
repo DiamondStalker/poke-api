@@ -2,7 +2,7 @@
   "name": "poke-api",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://DiamondStalker.github.io/poke-api",
+  
   "description": "pokemon display finder",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
