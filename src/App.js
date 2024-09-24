@@ -6,8 +6,8 @@ import Detail from './pages/Detail.jsx'
 
 function App() {
   
-  let basename = window.location.pathname.includes('/poke-api') ? '/poke-api' : ''
-  
+  let basename = window.location.pathname.includes('/diamondstalker') ? '/poke-api' : ''
+
   return (
     <div className="App">
       <header className="App-header">
