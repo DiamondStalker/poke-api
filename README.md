@@ -4,9 +4,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Page
 
-Visit [https://diamondstalker.github.io/poke-api/](Deploy with gh-pages)
-OR 
-Visit [https://poke-api-zp86.onrender.com/](Deploy with Render)
+Visit [Deploy with gh-pages](https://diamondstalker.github.io/poke-api/)
+or
+Visit [Deploy with Render](https://poke-api-zp86.onrender.com/)
 
 ## Description
 Poke API is a web application that allows users to search and explore information about Pokémon. It uses the [Pokémon API](https://pokeapi.co/) to obtain real-time data and presents the information in an attractive and easy-to-navigate way.
