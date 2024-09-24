@@ -6,7 +6,7 @@ import Detail from './pages/Detail.jsx'
 
 function App() {
   
-  let basename = window.location.pathname.includes('/diamondstalker') ? '/poke-api' : '/'
+  let basename = /diamondstalker/gmi.test(window.location.hostname) ? '/poke-api' : '/'
 
   return (
     <div className="App">
